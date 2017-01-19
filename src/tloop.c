@@ -136,9 +136,9 @@ void privmsg_motd(int sock, const char *filename)
 
     while(fgets(line, sizeof(line), file)) {
       memset(buff, 0, sizeof(buff));
-      strcpy(buff, "200 ");
-      strcat(buff, SERVER_NAME);
-      strcat(buff, ":");
+      //strcpy(buff, "200 ");
+      //strcat(buff, SERVER_NAME);
+      //strcat(buff, ":");
       strcat(buff, line);
       send(sock, buff, strlen(buff), 0);
     }
