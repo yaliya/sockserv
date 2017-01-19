@@ -39,21 +39,6 @@ void clist_remove(client_list* list, int index)
     list->data[i]->id = i;
   }
 
-  /*version2
-  if (index < 0 || index >= list->length)
-    return;
-
-  list->data[index] = NULL;
-
-  for (int i = index; i < list->length - 1; i++) {
-    list->data[i] = list->data[i + 1];
-    list->data[i + 1] = NULL;
-    list->data[i]->id = i;
-  }
-  */
-
-  //list->length--;
-
   if(list->length > 0 && list->length == list->capacity / 4)
     clist_resize(list, list->capacity / 2);
 }
