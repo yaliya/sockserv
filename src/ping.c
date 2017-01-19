@@ -28,7 +28,9 @@ void *tping(void *arg)
         //Clear buffer
         memset(buff, 0, 32);
         //Set PING message to buffer
-        strcpy(buff, "200 PING\r\n");
+        strcpy(buff, "200 ");
+        strcat(buff, SERVER_NAME);
+        strcat(buff, ":PING\r\n");
         //Send PING message to client
         send(list.data[i]->sock, buff, strlen(buff), 0);
       }

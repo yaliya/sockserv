@@ -13,8 +13,8 @@
 #include "shared.h"
 
 void *tloop(void *arg);
-void privmsg(int sock, const char *msg);
-void privmsg_all(const char *msg);
+void privmsg(int sock, const char *nick, const char *msg);
+void privmsg_all(const char *nick, const char *msg);
 void privmsg_motd(int sock, const char *filename);
 void complain(int sock, const char *msg);
 void require_nick(int sock, char *nick);
