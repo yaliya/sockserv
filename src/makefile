@@ -1,5 +1,5 @@
 CC 			= clang
-CFLAGS 	= -pedantic -Wall -Os
+CFLAGS 	= -pedantic -Wall -Os -std=c99
 LIBS 		= -lpthread -lconfig
 OBJECTS = server.o clist.o ping.o tloop.o shared.o
 

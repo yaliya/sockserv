@@ -29,5 +29,3 @@ WELCOME TO SERVER
 This is a Test TCP/IP Network Server written in C
 Developer: Yusuf Aliya
 Email: yaliyyaa@gmail.com
-Twitter: @yaliyyaa
-Facebook: /alian.vesuf

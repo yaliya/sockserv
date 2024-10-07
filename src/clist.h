@@ -41,9 +41,5 @@ void clist_remove(client_list* list, int index);
 //Clears the list
 void clist_clear(client_list* list);
 
-//Global list variable
-//To keep track of clients
-//Accessible across threads
-client_list list;
 
 #endif

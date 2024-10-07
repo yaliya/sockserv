@@ -15,6 +15,7 @@ extern const char *SERVER_TOPIC;
 extern int     PING_SEND;
 //Ping Timeout
 extern int     PING_TIMEOUT;
-
+// Client list
+extern client_list list;
 
 #endif
